@@ -59,14 +59,14 @@ public class CustomList extends ArrayAdapter<City> {
      * @return
      * Return true or false depending on if it belongs on list
      */
-    public boolean hasCity(City city) {
-        for (int i = 0; i < cities.size(); i++) {
-            if (cities.get(i) == city) {
-                return true;
-            }
-        }
-        return false;
-    }
+//    public boolean hasCity(City city) {
+//        for (int i = 0; i < cities.size(); i++) {
+//            if (cities.get(i) == city) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 
     /**
      * Check if a city is present in the list.
