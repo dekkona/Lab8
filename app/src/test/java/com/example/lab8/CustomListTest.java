@@ -22,22 +22,22 @@ public class CustomListTest {
 //        assertEquals(1, list.getCount());
 //    }
 
-    @Test
-    public void testHasCity() {
-        CustomList list = new CustomList(null, cityList);
-        City city = new City("Edmonton", "AB");
-        list.addCity(city);
-        assertEquals(true, list.hasCity(city));
-    }
-//
 //    @Test
-//    public void testDeleteCity(){
+//    public void testHasCity() {
 //        CustomList list = new CustomList(null, cityList);
 //        City city = new City("Edmonton", "AB");
 //        list.addCity(city);
-//        list.delete(city);
-//        assertEquals(false, list.hasCity(city));
+//        assertEquals(true, list.hasCity(city));
 //    }
+//
+    @Test
+    public void testDeleteCity(){
+        CustomList list = new CustomList(null, cityList);
+        City city = new City("Edmonton", "AB");
+        list.addCity(city);
+        list.delete(city);
+        assertEquals(false, list.hasCity(city));
+    }
 //
 //    @Test
 //    public void testCountCities(){
